@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <section>
+            <textarea class="texto-encriptar" cols="60" rows="5" placeholder="Ingresa el texto aquí"></textarea>
+            <div>
+                <h5 class="informacion"> Ingresa solo letras minúsculas y sin acento</h5>
+            </div>
+
+            <div class="botones">
+                <button class="boton-encriptar" onclick="boton_Encriptar()">Encriptar</button>
+                <button class="boton-desencriptar" onclick="boton_Desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section>
+            <textarea class="Resultado" cols="60" rows="5"></textarea>
+            <div>
+                <button class="boton-limpiar" onclick="limpiar()">Limpiar</button>
+            </div>
+        </section>
+
+    </main>
+    
+    <script src="script.js"></script>
+    
+    <footer>
+        <p class="copyright">&copy Copyright Luz Karina Quispe - 2024</p>
+    </footer>
+</body>
+</html>
