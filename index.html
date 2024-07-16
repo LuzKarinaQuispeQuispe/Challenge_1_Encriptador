@@ -4,39 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <header>
-
+        <img src="logo.png" alt="Logo">
+        <h1>Encriptador de Texto con JavaScript</h1>
     </header>
-
     <main>
         <section>
-            <textarea class="texto-encriptar" cols="60" rows="5" placeholder="Ingresa el texto aquí"></textarea>
             <div>
-                <h5 class="informacion"> Ingresa solo letras minúsculas y sin acento</h5>
+                <h5 class="informacion">Encriptador:</h5>
             </div>
-
+            <textarea class="texto-encriptar" cols="60" rows="5" placeholder="Ingresa el texto aquí, solo letras minúsculas y sin acento"></textarea>
             <div class="botones">
-                <button class="boton-encriptar" onclick="boton_Encriptar()">Encriptar</button>
-                <button class="boton-desencriptar" onclick="boton_Desencriptar()">Desencriptar</button>
+                <button class="boton-encriptar" onclick="boton_Encriptar()">
+                    <span class="material-icons">lock</span> Encriptar
+                </button>
+                <button class="boton-desencriptar" onclick="boton_Desencriptar()">
+                    <span class="material-icons">lock_open</span> Desencriptar
+                </button>
             </div>
         </section>
 
         <section>
-            <textarea class="Resultado" cols="60" rows="5"></textarea>
             <div>
-                <button class="boton-limpiar" onclick="limpiar()">Limpiar</button>
+                <h5 class="informacion">Resultado</h5>
+            </div>
+            <textarea class="Resultado" cols="60" rows="5"></textarea>
+            <div class="botones">
+                <button class="boton-limpiar" onclick="limpiar()">
+                    <span class="material-icons">delete</span> Limpiar
+                </button>
             </div>
         </section>
-
     </main>
     
     <script src="script.js"></script>
     
     <footer>
-        <p class="copyright">&copy Copyright Luz Karina Quispe - 2024</p>
+        <p class="copyright">&copy; Copyright Luz Karina Quispe - 2024</p>
     </footer>
 </body>
 </html>
